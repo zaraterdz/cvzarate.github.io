@@ -1,0 +1,138 @@
+.container{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    height: 900px;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    /* border: 1px solid white; */
+}
+
+*{
+    font-family: 'Bakbak One', cursive;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(RGB(35,38,46), RGB(48,74,107));
+    background-attachment: fixed;
+}
+
+/* ESTILO DEL TÍTULO "Ing. Alexis Zárate" */
+.hola_mundo > h1{
+    font-size: 9.375em;
+    filter: blur(5px);
+}
+.hola_mundo > h1:hover{
+    filter: blur();
+}
+/* FIN ESTILO DEL TÍTULO "Ing. Alexis Zárate" */
+
+/* EMPIEZA ESTILO Y ANIMACIÓN INTRODUCCIÓN */
+/* .hola_mundo {
+    letter-spacing: -10px;
+    animation-name: introduccion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes introduccion {
+    0%{
+        letter-spacing: -10px;
+    }
+
+    50%{
+        letter-spacing: 5px;
+    }
+
+    100% {
+        letter-spacing: -10px;
+    }
+} */
+/* TERMINA ESTILO Y ANIMACIÓN INTRODUCCIÓN */
+
+/* ==================== */
+
+/* INICIO ESTILO Y ANIMACIÓN BLUR */
+.mi_nombre:after{
+    position: relative;
+    top:-100px;
+    content: 'Alexis Zárate';
+    filter: blur(2px);
+    font-size: 30px;
+    animation-name: habilidades;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes habilidades {
+    0%{
+        content: 'Ingeniero';
+    }
+
+    14.28%{
+        content: 'Software';
+    }
+
+    28.56%{
+        content: 'HTML5';
+    }
+
+    42.84%{
+        content: 'CSS3';
+    }
+
+    57.12%{
+        content: 'JavaScript';
+    }
+
+    71.4%{
+        content: 'Git';
+    }
+
+    85.68%{
+        content: 'Developer';
+    }
+
+    100%{
+        content: 'Jr';
+    }
+}
+/* FIN ESTILO Y ANIMACIÓN BLUR */
+
+/* Container .redes_sociales */
+.redes_sociales{
+    display: flex;
+    /* border: 1px solid white; */
+    color: white;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.redes_sociales a img{
+    width: 6.25em;
+    background: none;
+}
+
+.curriculum_boton a{
+    display: flex;
+    border: 1px solid white;
+    width: 120px;
+    height: 80px;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500%;
+    border-width: 5px;
+    font-size: 40px;
+    color: white;
+}
+
+.curriculum_boton > a:hover{
+    background-color: white;
+    color: #2E4562;
+    cursor: pointer;
+}
